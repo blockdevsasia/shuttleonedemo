@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { Button, Input, Box, Card } from "rimble-ui";
+import { Button, Input, Box, EthAddress } from "rimble-ui";
 
 function App() {
   // Status States
@@ -97,8 +97,13 @@ function App() {
   return (
     <div className="App">
       <h1> Shuttle One API Demo (PH Peso) </h1>
-      <h5>{walletAddress}</h5>
+      <Box>
+      <Box width={1/2} m="auto">
+      <EthAddress address={walletAddress} textLabels />
+      </Box>
       <h3>{status}</h3>
+      </Box>
+
       <Box pb={5} >
         <Box pb={2}>
           Step 1: Create wallet

@@ -24,3 +24,4 @@ Shows sample implementation of [Shuttle One Developer API](https://github.com/sh
 ```
 Wait for a while and try to top up again
 - You might encounter CORS errors, i havent managed it here but I installed the Moesif CORS extension in Chrome
+- The codebase interacts with Philippine Peso (PHP) you can do your own implementations as you wish :)
